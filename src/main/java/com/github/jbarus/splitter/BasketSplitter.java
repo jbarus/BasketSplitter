@@ -11,6 +11,14 @@ public class BasketSplitter {
         productTransportMap = FileReader.readFromJSON(absolutePathToConfigFile);
     }
     public Map<String, List<String>> split(List<String> items) {
+        if(items.isEmpty()){
+            throw new IllegalArgumentException("Item list should contain at least");
+        }
+        for(String item : items){
+            if(!productTransportMap.containsKey(item)){
+                throw new RuntimeException("At least one item is not on the list");
+            }
+        }
         Map<String, List<String>> transportProductCountMap = new HashMap<>();
         Map<String, List<String>> result = new HashMap<>();
         for (String item : items) {
