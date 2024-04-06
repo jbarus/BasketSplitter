@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FileReader {
-    public static Map<String,List<String>> readFromJSON(String absolutePath){
+class FileReader {
+    public static HashMap<String,List<String>> readFromJSON(String absolutePath){
         HashMap<String, List<String>> productList = new HashMap<>();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
