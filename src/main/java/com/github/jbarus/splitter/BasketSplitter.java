@@ -10,6 +10,7 @@ public class BasketSplitter {
     }
     public Map<String, List<String>> split(List<String> items) {
         /* ... */
+        return null;
     }
     /* ... */
 }
