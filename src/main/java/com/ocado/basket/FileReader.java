@@ -1,4 +1,4 @@
-package com.github.jbarus.splitter;
+package com.ocado.basket;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

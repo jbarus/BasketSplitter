@@ -26,7 +26,7 @@ products and their transportation methods. This file has a precise structure and
 ```
 
 * Way it works:<br>
-Underlying algorithm is pretty straightforward. Firstly, it fetches products from config file and then counts 
+Underlying algorithm is pretty straightforward. Firstly, it fetches products from config file and then 
 puts all methods of transport in HashMap in such a way:
 
 | Key                    | Value                            |

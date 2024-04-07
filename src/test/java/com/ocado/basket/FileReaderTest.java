@@ -1,5 +1,6 @@
-package com.github.jbarus.splitter;
+package com.ocado.basket;
 
+import com.ocado.basket.FileReader;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;

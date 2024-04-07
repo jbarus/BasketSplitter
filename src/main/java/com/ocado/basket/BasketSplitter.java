@@ -1,4 +1,4 @@
-package com.github.jbarus.splitter;
+package com.ocado.basket;
 
 import java.util.ArrayList;
 import java.util.HashMap;

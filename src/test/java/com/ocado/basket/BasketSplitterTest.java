@@ -1,5 +1,6 @@
-package com.github.jbarus.splitter;
+package com.ocado.basket;
 
+import com.ocado.basket.BasketSplitter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
