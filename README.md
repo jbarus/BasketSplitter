@@ -57,3 +57,24 @@ Project is created with:
 * [Jackson](https://github.com/FasterXML/jackson) version: 2.17.0
 
 ## Setup
+Setup of this project is pretty straight forward. There are two ways of installing this library:
+* You can use it as a standalone project:
+1. Download the project using ```git clone```
+2. Add main class and method in com.ocado.basket directory
+3. Compile and use as a standalone project
+
+* Or you can use it as a library in some project:
+1. You can head to releases tab and download compiled library (it is a fat jar, so all dependencies are included).
+2. Add following dependency tou you pom.xml file:
+```xml
+<dependency>
+    <groupId>com.ocado.basket</groupId>
+    <artifactId>basket</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${path_to_library}</systemPath>
+</dependency>
+```
+3. Alternatively you can download source code and compile it yourself using ```mvn clean package```. 
+Output library should be in the target directory under basket-1.0 name.
+4. Add mentioned earlier dependency.
