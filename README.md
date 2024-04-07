@@ -58,15 +58,15 @@ Project is created with:
 * [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/) version: 3.2.4
 
 ## Setup
-Setup of this project is pretty straight forward. There are two ways of installing this library:
-* You can use it as a standalone project:
-1. Download the project using ```git clone```
-2. Add main class and method in com.ocado.basket directory
+Setting up this project is relatively straightforward. There are two ways to install this library:
+### Standalone Project
+1. Download the project using `git clone`
+2. Add main class and method in `com.ocado.basket` directory
 3. Compile and use as a standalone project
 
-* Or you can use it as a library in some project:
-1. You can head to releases tab and download compiled library (it is a fat jar, so all dependencies are included).
-2. Add following dependency tou you pom.xml file:
+### Using as a Library in Another Project
+1. You can download the compiled library from the Releases tab; it is a fat jar, so all dependencies are included.
+2. Add the following dependency to your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.ocado.basket</groupId>
@@ -76,6 +76,6 @@ Setup of this project is pretty straight forward. There are two ways of installi
     <systemPath>${path_to_library}</systemPath>
 </dependency>
 ```
-3. Alternatively you can download source code and compile it yourself using ```mvn clean package```. 
-Output library should be in the target directory under basket-1.0 name.
-4. Add mentioned earlier dependency.
+3. Alternatively, you can download the source code and compile it yourself using ```mvn clean package```.
+The output library should be in the target directory under the name basket-1.0.
+4. Add the mentioned dependency to your project.
