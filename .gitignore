@@ -40,3 +40,6 @@ build/
 
 ### Fat Jar ###
 /dependency-reduced-pom.xml
+
+### Develpment testing ###
+/src/main/java/com/ocado/basket/Main.java

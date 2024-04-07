@@ -18,7 +18,7 @@ public class BasketSplitterTest {
     }
 
     @Test
-    void testSplitWithEmptyItems() {
+    void testSplitWithEmptyItemsList() {
         List<String> items = Collections.emptyList();
         assertThrows(IllegalArgumentException.class, () -> basketSplitter.split(items));
     }
@@ -30,7 +30,7 @@ public class BasketSplitterTest {
     }
 
     @Test
-    void testSplitWithOneProductAndOneTransportMethod() {
+    void testSplitWithOneProductMethod() {
         List<String> items = Arrays.asList("Cookies Oatmeal Raisin");
         Map<String, List<String>> result = basketSplitter.split(new ArrayList<>(items));
         assertEquals(1, result.size());
@@ -60,6 +60,20 @@ public class BasketSplitterTest {
             }
         }
         assertEquals(2,counter);
+    }
+
+    @Test
+    void testSplitWithAllItemsSameTransportMethod() {
+        // Test data
+        List<String> items = Arrays.asList("Wine - Sherry Dry Sack, William", "Spinach - Frozen");
+
+        // Call the method
+        Map<String, List<String>> result = basketSplitter.split(items);
+
+        // Assertions
+        assertEquals(1, result.size());
+        assertTrue(result.containsKey("Mailbox delivery")); // Assuming both items are transported via Pick-up point
+        assertEquals(2, result.get("Mailbox delivery").size()); // Assuming two items are transported via Pick-up point
     }
 
 }
