@@ -55,6 +55,7 @@ Project is created with:
 * [Exec Maven Plugin](https://www.mojohaus.org/exec-maven-plugin/) version: 3.2.0
 * [JUnit](https://junit.org/junit5/) version: 5.9.2
 * [Jackson](https://github.com/FasterXML/jackson) version: 2.17.0
+* [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/) version: 3.2.4
 
 ## Setup
 Setup of this project is pretty straight forward. There are two ways of installing this library:
