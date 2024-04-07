@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 
 class FileReader {
+
+    // Reads data from a JSON file located at the specified absolute path and returns a HashMap
+    // with keys representing products and values representing lists of transport methods.
     public static HashMap<String,List<String>> readFromJSON(String absolutePath){
         HashMap<String, List<String>> productList = new HashMap<>();
         ObjectMapper objectMapper = new ObjectMapper();
